@@ -1,0 +1,9 @@
+web:
+  build: bin
+  links:
+    - redis
+  ports:
+    - "80:80"
+
+redis:
+  image: redis:latest
